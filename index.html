@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Envelope</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="envelope" id="envelope">
+    <div class="envelope-top" id="envelopeTop">
+      <div class="envelope-flap" id="flap"></div>
+    </div>
+    <div class="envelope-bottom" id="envelopeBottom">
+      <p>Click to open!</p>
+    </div>
+  </div>
+
+  <div class="hearts" id="hearts"></div>
+
+  <div class="letter" id="letter">
+    <p id="from">From: Gigi</p>
+    <p id="to">To: <span id="userName">[Your Name]</span></p>
+    <p id="message">You’re special!</p>
+  </div>
+
+  <input type="text" id="userNameInput" placeholder="Enter your name">
+  <button onclick="openEnvelope()">Open Envelope</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: pink;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .envelope-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: pink;
+    z-index: 1;
+  }
+  
+  .envelope-flap {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    border-radius: 10px;
+    transition: transform 1s ease;
+  }
+  
+  .envelope-bottom {
+    padding: 20px;
+    background-color: #ffd1dc;
+  }
+  
+  .hearts {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: flyHearts 3s ease-in-out forwards;
+  }
+  
+  @keyframes flyHearts {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0, -1000px) scale(2);
+    }
+  }
+  
+  .letter {
+    display: none;
+    background: white;
+    width: 250px;
+    height: 150px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  input {
+    margin: 20px;
+  }
+  
